@@ -81,7 +81,9 @@ class Fret {
     let lower = table.insertRow();
     let lowerLeft = lower.insertCell();
     lowerLeft.classList.add("idunnoCell");
-    lowerLeft.innerHTML = 0 != this.scaleDeg ? this.scaleDeg : "";
+    let rome = [ "I", "II", "III", "IV", "V", "VI", "VII" ];
+    lowerLeft.innerHTML = 0 != this.scaleDeg ? rome[this.scaleDeg - 1] : "";
+    // lowerLeft.innerHTML = 0 != this.scaleDeg ? this.scaleDeg + "." : "";
     let lowerRight = lower.insertCell();
     lowerRight.classList.add("intervalCell");
     lowerRight.innerHTML =
