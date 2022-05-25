@@ -32,15 +32,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   gsDrop7.setString(6, "A#/Bb");
   gsDrop7.setString(7, "D#/Eb");
 
-  let key = "D#/Eb"
+  // let key = "D#/Eb"
+  let key = "C"
   let chromatic = new Scale(key, "1 2 3 4 5 6 7");
   let majorPentatonic = new Scale(key, "1 2 3 5 6");
   let minorPentatonic = new Scale(key, "1 b3 4 5 b7");
   let naturalMinor = new Scale(key, "1 2 b3 4 5 b6 b7");
+  let naturalMajor = new Scale(key, "1 2 3 4 5 6 7");
   let harmonicMinor = new Scale(key, "1 2 b3 4 5 b6 7");
 
   let neck = new Neck(24, 7, gsDrop7);
-  neck.filter(minorPentatonic);
+  // neck.filter(naturalMajor);
+  neck.filter(naturalMinor);
   neck.drawTable("neck");
 });
 
