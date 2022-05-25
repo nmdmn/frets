@@ -1,0 +1,3 @@
+# frets
+
+### guitar frets visualizer
