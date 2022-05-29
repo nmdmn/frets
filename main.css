@@ -1,23 +1,26 @@
 body {
-	font-size: 12px;
-	font-family: "Consolas";
+    font-size: 12px;
+    font-family: "Consolas";
 }
 
 .noteCell {
-	text-align: center;
-	width: 32px;
-	height: 14px;
-	border: solid 1px;
+    text-align: center;
+    width: 32px;
+    height: 14px;
+    border: solid 1px;
 }
 
-.intervalCell, .idunnoCell {
-	text-align: center;
-	width: 16px;
-	height: 14px;
-	border: solid 1px;
+.intervalCell,
+.idunnoCell {
+    text-align: center;
+    width: 20px;
+    height: 14px;
+    border: solid 1px;
 }
 
-table, th, td {
-	padding: 1px;
-	border-collapse: collapse;
+table,
+th,
+td {
+    padding: 1px;
+    border-collapse: collapse;
 }
